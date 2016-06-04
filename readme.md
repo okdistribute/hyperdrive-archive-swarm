@@ -42,3 +42,7 @@ Defaults from datland-swarm-defaults can also be overwritten:
   * `dns.server`: DNS server
   * `dns.domain`: DNS domain
   * `dht.bootstrap`: distributed hash table bootstrapping nodes
+
+### `sw.close(cb)`
+
+Leave the p2p swarm and close existing connections.

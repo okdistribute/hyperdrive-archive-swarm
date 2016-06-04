@@ -28,6 +28,7 @@ module.exports = function (archive, opts) {
     }, opts))
     ds.once('listening', () => ds.join(swarmKey))
     ds.listen(0)
+    emitter.close = ds.close.bind(ds)
   }
   return emitter
 }
