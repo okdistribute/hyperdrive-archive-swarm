@@ -32,6 +32,7 @@ module.exports = function (archive, opts) {
       ds.join(archive.discoveryKey)
     })
     ds.listen(0)
+    emitter.close = ds.close.bind(ds)
   }
   return emitter
 }
