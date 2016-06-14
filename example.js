@@ -11,5 +11,5 @@ sw.on('connection', function (peer, type) {
   console.log('connected to', sw.connections, 'peers')
   peer.on('close', function () {
     console.log('peer disconnected')
-  }) 
+  })
 })
