@@ -54,6 +54,20 @@ Join the p2p swarm for the given hyperdrive archive. The return object, `sw`, is
 
 Get the list of currently active connections.
 
+### sw.destroy(callback)
+
+Close all sockets and remove the swarm from the network
+
+### sw.join(key)
+
+Join a channel specified by key (usually a name, hash or id, must be a Buffer
+or a string). After joining will immediately search for peers advertising this
+key, and re-announce on a timer.
+
+### sw.leave(key)
+
+Leave the channel specified key
+
 ##### Options
 
   * `upload`: bool, upload data to the other peer?
